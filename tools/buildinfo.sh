@@ -64,3 +64,5 @@ echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 echo "ro.du.device=$DU_DEVICE"
 
 echo "# end build properties"
+
+source vendor/du/build/tools/buildinfo.sh;
