@@ -1605,6 +1605,17 @@ class BlockDifference(object):
     if OPTIONS.verify:
       self._WritePostInstallVerifyScript(script)
 
+  def WriteVendorScript(self, script, output_zip, progress=None):
+    if not self.src:
+      # write the output unconditionally
+      script.Print(" ")
+      script.Print("Flashing DUREX Vendor files...")
+    if progress:
+      script.ShowProgress(progress, 0)
+    self._WriteUpdate(script, output_zip)
+    if OPTIONS.verify:
+      self._WritePostInstallVerifyScript(script)
+
   def WriteStrictVerifyScript(self, script):
     """Verify all the blocks in the care_map, including clobbered blocks.
 

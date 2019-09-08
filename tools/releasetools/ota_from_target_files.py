@@ -895,7 +895,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
                                        allow_shared_blocks)
     vendor_tgt.ResetFileMap()
     vendor_diff = common.BlockDifference("vendor", vendor_tgt)
-    vendor_diff.WriteScript(script, output_zip)
+    vendor_diff.WriteVendorScript(script, output_zip)
 
   common.CheckSize(boot_img.data, "boot.img", target_info)
   common.ZipWriteStr(output_zip, "boot.img", boot_img.data)
