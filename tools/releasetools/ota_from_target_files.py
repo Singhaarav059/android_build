@@ -926,14 +926,13 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("ro.du.device")
 
   script.Print("----------------------------------------------");
-  script.Print("    _____ ____  _______      ___    _  _____  ");
-  script.Print("   / ____/ __ \|  __ \ \    / / |  | |/ ____| ");
-  script.Print("  | |   | |  | | |__) \ \  / /| |  | | (___   ");
-  script.Print("  | |   | |  | |  _  / \ \/ / | |  | |\___ \  ");
-  script.Print("  | |___| |__| | | \ \  \  /  | |__| |____) | ");
-  script.Print("   \_____\____/|_|  \_\  \/    \____/|_____/  ");
+  script.Print("          ____  __  __         ___  ____      ");
+  script.Print("         / __ \/ / / / |\   /||   ||    \     ");
+  script.Print("        / / / / / / /  | \_/ ||   ||     |    ");
+  script.Print("       / /_/ / /_/ /   |     ||   ||     |    ");
+  script.Print("      /_____/\____/    |     |\___/|____/     ");
   script.Print("                                              ");
-  script.Print("               by Genkzsz11                   ");
+  script.Print("               by Singhaarav                   ");
   script.Print("----------------------------------------------");
   script.Print(" Android version: %s"%(android_version));
   script.Print(" Build id: %s"%(build_id));
